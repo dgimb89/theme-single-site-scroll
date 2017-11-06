@@ -1,0 +1,21 @@
+{
+    "name": "dg/theme-single-site-scroll",
+    "type": "pagekit-theme",
+    "version": "1.0.0",
+    "title": "Single Site Scroll",
+    "description": "Pagekit's default theme.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Gimbatschki",
+            "email": "dgimb89@googlemail.com",
+            "homepage": "http://daniel-gimbatschki.de"
+        }
+    ],
+    "extra": {
+        "image": "image.jpg"
+    },
+    "archive": {
+        "exclude": ["node_modules", "!/app", "!/css", "/app/assets", "gulpfile.js", "bower.js", "package.js"]
+    }
+}
