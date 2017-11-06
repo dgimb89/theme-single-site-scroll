@@ -112,24 +112,27 @@ img.tm-logo, img.tm-logo-contrast {
 /* Blocks
  ========================================================================== */
 
-.tm-hero-height { min-height: ~"calc(100vh - 81px)"; }
-
-.tm-hero-padding > * { padding-top: 81px; }
-
-/*
- * Footer
- */
-
-/* Phone landscape and bigger */
-@media (min-width: @breakpoint-medium) {
-
-    .tm-footer {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
+section > div:nth-child(odd) {
+  background: @global-default-background;
+  color: @global-dark-color;
 }
 
+section > div:nth-child(odd) h1, 
+section > div:nth-child(odd) h2, 
+section > div:nth-child(odd) h3, 
+section > div:nth-child(odd) h4, 
+section > div:nth-child(odd) h5, 
+section > div:nth-child(odd) h6 {
+  color: @global-dark-color;
+}
+
+section > div:nth-child(even) {
+  background: @global-primary-background;
+}
+
+section > div:last-child {
+  padding-bottom: 20px;
+}
 
 /* Blog
  ========================================================================== */

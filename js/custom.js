@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('#calendar').fullCalendar({
+  /*$('#calendar').fullCalendar({
     header: {
       left: 'prev,next today',
       center: 'title',
@@ -15,13 +15,13 @@ $(document).ready(function () {
       editable: false,
       eventLimit: true, // allow "more" link when too many events
       events: './events.php'
-    });
+    });*/
 
 
   $(document).on("scroll", onScroll);
 
     //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
+    $('a[href^="/#"]').on('click', function (e) {
       e.preventDefault();
       $(document).off("scroll");
 

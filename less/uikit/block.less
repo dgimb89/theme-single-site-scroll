@@ -6,9 +6,9 @@
 
 // Variables
 // ========================================================================
-
-@block-padding-vertical:                        50px;
-@block-padding-vertical-large:                  100px;
+@block-padding-horizontal:                      20px;
+@block-padding-vertical:                        30px;
+@block-padding-vertical-large:                  80px;
 
 @block-large-padding-vertical-large:            150px;
 
@@ -59,4 +59,9 @@
     .uk-block-primary + .uk-block-primary,
     .uk-block-secondary + .uk-block-secondary { padding-top: 0; }
 
+}
+
+.uk-block {
+    padding-left: @block-padding-horizontal;
+    padding-right: @block-padding-horizontal;
 }

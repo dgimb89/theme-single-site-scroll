@@ -1,7 +1,7 @@
 <?php foreach ($widgets as $widget) : ?>
-<div class="uk-width-medium-1-<?= count($widgets) ?>">
+<div class="uk-block uk-width-medium-1-1">
 
-    <div class="uk-panel <?= $widget->theme['panel'] ?> <?= $widget->theme['alignment'] ? 'uk-text-center' : '' ?> <?= $widget->theme['html_class'] ?>">
+    <div id="<?= $widget->theme['html_id'] ?>" class="uk-panel <?= $widget->theme['panel'] ?> <?= $widget->theme['alignment'] ? 'uk-text-center' : '' ?> <?= $widget->theme['html_class'] ?>">
 
         <?php if (!$widget->theme['title_hide']) : ?>
         <h3 class="<?= $widget->theme['title_size'] ?>"><?= $widget->title ?></h3>

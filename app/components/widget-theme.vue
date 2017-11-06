@@ -38,6 +38,13 @@
         </div>
 
         <div class="uk-form-row">
+            <label for="form-theme-badge" class="uk-form-label">{{ 'HTML Id' | trans }}</label>
+            <div class="uk-form-controls">
+                <input id="form-theme-badge" class="uk-form-width-large" type="text" v-model="widget.theme.html_id">
+            </div>
+        </div>
+
+        <div class="uk-form-row">
             <label for="form-theme-panel" class="uk-form-label">{{ 'Panel Style' | trans }}</label>
             <div class="uk-form-controls">
                 <select id="form-theme-panel" class="uk-form-width-large" v-model="widget.theme.panel">

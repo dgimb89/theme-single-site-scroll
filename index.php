@@ -59,6 +59,7 @@ return [
         'title_size' => 'uk-panel-title',
         'alignment' => '',
         'html_class' => '',
+        'html_id' => '',
         'panel' => ''
 
     ],
@@ -134,9 +135,7 @@ return [
             if ($event['widget']->position == 'navbar') {
                 $event->setTemplate('menu-navbar.php');
             }
-
         }
-
     ]
 
 ];
