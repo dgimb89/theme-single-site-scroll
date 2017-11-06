@@ -7,22 +7,23 @@
 // Variables
 // ========================================================================
 
-@navbar-background:                             @global-background;
+@navbar-background:                             #333;
 @navbar-color:                                  @global-muted-color;
 @navbar-link-color:                             @global-muted-color;
-@navbar-link-hover-color:                       @global-color;
+@navbar-link-hover-color:                       @global-muted-color;
 
 @navbar-nav-height:                             80px;
 @navbar-nav-line-height:                        @navbar-nav-height;
 @navbar-nav-color:                              @global-muted-color;
-@navbar-nav-font-size:                          14px;
+@navbar-nav-font-weight:                        600;
+@navbar-nav-font-size:                          16px;
 @navbar-nav-font-family:                        "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @navbar-nav-hover-background:                   transparent;
-@navbar-nav-hover-color:                        @global-dark-color;
+@navbar-nav-hover-color:                        @global-muted-color;
 @navbar-nav-onclick-background:                 transparent;
-@navbar-nav-onclick-color:                      @global-dark-color;
+@navbar-nav-onclick-color:                      @global-muted-color;
 @navbar-nav-active-background:                  transparent;
-@navbar-nav-active-color:                       @global-dark-color;
+@navbar-nav-active-color:                       @global-color;
 
 @navbar-brand-font-size:                        round((@global-font-size * 1.28)); // 18px / 20px
 @navbar-brand-color:                            @global-dark-color;
@@ -71,6 +72,13 @@
 
 // Miscellaneous
 // ========================================================================
+
+.uk-navbar-nav > li > a:hover {
+    background-color: darken(@navbar-background, 10%);
+}
+.uk-navbar-nav > li:first-child > a:hover {
+    border-radius: 12px 0 0 12px;
+}
 
 .hook-navbar-misc() {
 

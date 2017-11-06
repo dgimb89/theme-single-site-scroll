@@ -27,6 +27,13 @@
             </div>
         </div>
 
+        <div class="uk-form-row">
+            <label class="uk-form-label">{{ 'Video Background' | trans }}</label>
+            <div class="uk-form-controls">
+                <input id="video-background" class="uk-form-width-large" type="text" v-model="config.video_background">
+            </div>
+        </div>
+
     </div>
 
 </template>

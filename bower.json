@@ -1,7 +1,7 @@
 {
   "name": "theme-one",
   "dependencies": {
-    "uikit": "#master"
+    "uikit": "#v2/dist"
   },
   "private": true
 }

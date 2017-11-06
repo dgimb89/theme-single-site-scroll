@@ -4,6 +4,7 @@
 // ========================================================================
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:600,400,300';
+@import 'https://fonts.googleapis.com/css?family=Oswald:300';
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:400';
 
 
@@ -14,14 +15,14 @@
 // Text
 //
 
-@global-color:                                  #888888;
+@global-color:                                  #fff;
 @global-muted-color:                            #adadad;
 
 @global-link-color:                             #525252;
 @global-link-hover-color:                       #525252;
 
 @global-dark-color:                             #525255;
-@global-contrast-color:                         #fff;
+@global-contrast-color:                         #000;
 
 @global-font-size:                              16px;
 @global-line-height:                            26px;
@@ -30,16 +31,16 @@
 // Backgrounds & Borders
 //
 
-@global-background:                             #fff;
+@global-background:                             transparent;
 @global-border:                                 #e5e5e5;
 
-@global-default-background:                     #f5f5f5;
-@global-default-hover-background:               #fafafa;
-@global-default-active-background:              #eee;
+@global-default-background:                     rgba(255,255,255,.75);
+@global-default-hover-background:               @global-default-background;
+@global-default-active-background:              @global-default-background;
 
-@global-primary-background:                     #489be0;
-@global-primary-hover-background:               #3a94e0;
-@global-primary-active-background:              #3589cf;
+@global-primary-background:                     rgba(0,0,0,.75);
+@global-primary-hover-background:               @global-primary-background;
+@global-primary-active-background:              @global-primary-background;
 
 @global-success-background:                     #3DC372;
 @global-success-hover-background:               #23b25c;

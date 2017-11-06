@@ -44,9 +44,9 @@ return [
         'hero_contrast' => '',
         'hero_parallax' => '',
         'navbar_transparent' => '',
-        'top_style' => 'uk-block-muted',
-        'main_style' => 'uk-block-default',
-        'bottom_style' => 'uk-block-muted'
+        'top_style' => '',
+        'main_style' => '',
+        'bottom_style' => ''
 
     ],
 
@@ -74,7 +74,8 @@ return [
     'config' => [
 
         'logo_contrast' => '',
-        'logo_offcanvas' => ''
+        'logo_offcanvas' => '',
+        'video_background' => 'https://www.youtube.com/embed/GLgbIAuEHco?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=GLgbIAuEHco'
 
     ],
 
@@ -113,37 +114,8 @@ return [
                 'parallax' => ''
             ];
 
-            $sticky = [
-                'media' => 767,
-                'showup' => true,
-                'animation' => 'uk-animation-slide-top'
-            ];
-
             if ($params['hero_viewport']) {
                 $classes['hero'] = 'tm-hero-height';
-            }
-
-            // Sticky overlay navbar if hero position exists
-            if ($params['navbar_transparent'] && $view->position()->exists('hero') && $params['hero_image']) {
-
-                $sticky['top'] = '.uk-sticky-placeholder + *';
-                $classes['navbar'] .= ' tm-navbar-overlay tm-navbar-transparent';
-
-                if ($params['hero_viewport']) {
-                    $classes['hero'] = 'uk-height-viewport';
-                } else {
-                    $classes['hero'] = 'tm-hero-padding';
-                }
-
-                if ($params['hero_contrast']) {
-
-                    $sticky['clsinactive'] = 'tm-navbar-transparent tm-navbar-contrast';
-                    $classes['navbar'] .= ' tm-navbar-contrast';
-
-                } else {
-                    $sticky['clsinactive'] = 'tm-navbar-transparent';
-                }
-
             }
 
             if ($params['hero_parallax'] && $view->position()->exists('hero') && $params['hero_image']) {
@@ -153,8 +125,6 @@ return [
             if ($params['hero_contrast'] && $params['hero_image']) {
                 $classes['hero'] .= ' uk-contrast';
             }
-
-            $classes['sticky'] = 'data-uk-sticky=\''.json_encode($sticky).'\'';
 
             $params['classes'] = $classes;
         },
